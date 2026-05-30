@@ -84,28 +84,6 @@ h2 {
   width: 50ch;
 }
 
-#nota1,
-#nota2,
-#nota3 {
-  width: 4ch;
-}
-
-#presencas {
-  width: 2ch;
-}
-#aulasTotais {
-  width: 3ch;
-}
-#responsavel {
-  width: 50ch;
-}
-#telefone {
-  width: 11ch;
-}
-#email {
-  width: 50ch;
-}
-
 .listar {
   text-align: center; /* centraliza o conteúdo */
   font-weight: bold;
