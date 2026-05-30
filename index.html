@@ -1,18 +1,85 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title style="font-family: Arial; color: rgb(17, 2, 102)">
-      Aula02 - Calculadora de Média
-    </title>
+    <title>EduTech Dash</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 style="font-family: Arial; font-weight: bold rgb(17, 2, 102)">
-      Calculadora de média
-    </h1>
-    <!-- div vazia para caracterizar o id -->
-    <div id="resultado"></div>
+    <h1>Painel Escolar Integrado</h1>
+
+    <!-- BLOCO 1: FORMULÁRIO DE CADASTRO/LANÇAMENTO -->
+    <section id="formulario">
+      <!-- <fieldset>Cadastro de Estudante</fieldset> -->
+      <!-- style="font-size: 50; font-weight: bold; text-align: center; background-color: rgb(211, 210, 210); box-shadow:rgba(0, 0, 0.2, 0.2) Arial, Helvetica, sans-serif;" -->
+
+      <h2 class="cadastro">Cadastro de Estudante</h2>
+      <form id="cadastroAluno">
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" name="nota1" placeholder="0 a 10" />
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" name="nota2" placeholder="0 a 10" />
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" name="nota3" placeholder="0 a 10" />
+
+        <label for="presencas">Total de Presenças:</label>
+        <input type="number" id="presencas" name="presencas" required />
+
+        <label for="aulasTotais">Aulas Totais:</label>
+        <input type="number" id="aulasTotais" name="aulasTotais" required />
+
+        <label for="responsavel">Nome do Responsável:</label>
+        <input type="text" id="responsavel" name="responsavel" />
+
+        <label for="telefone">Telefone do Responsável:</label>
+        <input type="text" id="telefone" name="telefone" />
+
+        <label for="email">E-mail do Responsável:</label>
+        <input type="email" id="email" name="email" />
+
+        <button type="submit" class="botao-cadastrar">Cadastrar</button>
+      </form>
+      <br />
+      <!-- <div class="botao-centro">
+        <button type="submit">Cadastrar</button>
+      </div> -->
+    </section>
+
+    <!-- BLOCO 2: PAINEL DE LISTAGEM E FILTROS -->
+    <section id="painel">
+      <h2 class="listar">Lista de Estudantes</h2>
+      <input type="text" id="filtroNome" placeholder="Buscar por nome..." />
+      <table id="tabelaAlunos">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Média</th>
+            <th>Frequência</th>
+            <th>Status</th>
+            <th>Conceito</th>
+            <th>Contato</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas dinâmicas serão inseridas aqui via JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- BLOCO 3: CENTRAL DE DESAFIOS (GAMIFICAÇÃO) -->
+    <section id="gamificacao">
+      <h2 class="centralDesafio">Central de Desafios</h2>
+      <p>Escolha um aluno e participe de minijogos matemáticos!</p>
+      <button id="desafioMedia">Desafio da Média</button>
+      <button id="desafioBusca">Desafio de Busca</button>
+      <div id="resultadoDesafio"></div>
+    </section>
+
+    <script src="painel_escolar_integrado.js"></script>
   </body>
-  <script src="calcula-media.js"></script>
 </html>

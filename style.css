@@ -1,0 +1,220 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #55758b;
+  color: black;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  /* margin-top: 5px;
+  margin-bottom: 5px; */
+  padding-top: auto;
+  padding-bottom: auto;
+  margin: 0 auto 20px auto;
+  max-width: 600px;
+  text-align: center; /* centraliza o conteúdo */
+  font-weight: bold;
+  color: white;
+}
+
+/* BLOCO 1: Formulário */
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin: 0 auto 20px auto;
+  max-width: 600px;
+  text-align: center; /* centraliza o conteúdo */
+  font-weight: bold;
+  color: white;
+}
+
+/* fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(48, 48, 48);
+} */
+#formulario {
+  background-color: #035691;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 auto 30px auto; /* centraliza horizontalmente */
+  max-width: 600px; /* define largura máxima */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* opcional: sombra para destacar */
+}
+
+.cadastro {
+  text-align: center; /* centraliza o conteúdo */
+  font-weight: bold;
+  color: white;
+}
+
+#formulario form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  gap: 10px;
+  font-family: sans-serif;
+}
+
+#formulario label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: white;
+}
+
+#nome {
+  width: 50ch;
+}
+
+#nota1,
+#nota2,
+#nota3 {
+  width: 4ch;
+}
+
+#presencas {
+  width: 2ch;
+}
+#aulasTotais {
+  width: 3ch;
+}
+#responsavel {
+  width: 50ch;
+}
+#telefone {
+  width: 11ch;
+}
+#email {
+  width: 50ch;
+}
+
+.listar {
+  text-align: center; /* centraliza o conteúdo */
+  font-weight: bold;
+  color: black;
+}
+
+#formulario input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  max-width: 400px;
+  padding: 8px;
+  border: 1px solid #a1a1a1;
+  border-radius: 6px;
+  outline: none;
+}
+
+.botao-cadastrar {
+  text-align: right; /* centraliza o conteúdo */
+}
+
+.botao-cadastrar {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #74c6d1;
+  color: rgb(28, 73, 139);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px 10px 12px;
+}
+
+/* BLOCO 2: Painel */
+#painel {
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 auto 30px auto; /* centraliza horizontalmente */
+  max-width: 600px; /* largura máxima definida */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* opcional */
+}
+
+#painel input {
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* centraliza o campo de busca */
+}
+
+#painel table {
+  width: 70%;
+  margin: 0 auto; /* centraliza a tabela */
+  border-collapse: collapse;
+}
+
+#painel th,
+#painel td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#painel th {
+  background-color: #ffcc80;
+}
+
+/* BLOCO 3: Gamificação */
+#gamificacao {
+  background-color: #e8f5e9;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 0 auto 30px auto; /* centraliza horizontalmente */
+  max-width: 600px; /* largura máxima definida */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* opcional */
+  text-align: center; /* centraliza conteúdo interno */
+}
+
+.centralDesafio {
+  text-align: center; /* centraliza o conteúdo */
+  font-weight: bold;
+  color: black;
+}
+
+#gamificacao button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resultadoDesafio {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+}
